@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maquette</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <style>
+        .menu-toggle:checked + nav {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body class="bg-white font-sans leading-normal tracking-normal">
+    <!-- Header Section -->
+    <header class="bg-white text-gray-900" style="background-image: url('./images/Fichier2.png'); background-size: cover;">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a class="font-bold text-2xl lg:text-2xl" href="#">
+                Brainwave.io
+            </a>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle hidden">
+            <label for="menu-toggle" class="block lg:hidden cursor-pointer">
+                <svg class="w-6 h-6 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </label>
+            <nav class="hidden lg:flex space-x-6 items-center flex-col lg:flex-row">
+                <a href="#" class="hover:text-blue-500 text-gray-950 font-bold">Demos</a>
+                <a href="#" class="hover:text-blue-500 text-gray-950 font-bold">Pages</a>
+                <a href="#" class="hover:text-blue-500 text-gray-950 font-bold">Support</a>
+                <a href="#" class="hover:text-blue-500 text-gray-950 font-bold">Contact</a>
+                <button class="bg-indigo-600 text-white px-5 py-2 rounded-lg hover:bg-indigo-600 ml-4">
+                    Get A Free Quote
+                </button>
+            </nav>
+        </div>
+    </header>        
+
+    <!-- Hero Section -->
+    <section class="relative bg-white py-6 px-6 md:px-24" style="background-image: url('./images/Fichier2.png'); background-size: cover;">
+        <div class="container mx-auto max-w-screen-lg text-center grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <div class="text-left -pt-5">
+                <h1 class="text-4xl font-bold text-gray-900 mb-4 leading-tight">
+                    Make your business <br> powerful with Shade.
+                </h1>
+                <p class="text-gray-600 mb-6 leading-relaxed">
+                    With lots of unique blocks, you can easily build a <br> page without coding. Build your next consultancy <br>website within a few minutes.
+                </p>
+                <button class="bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition duration-300 ease-in-out mb-4">
+                    Get A Free Quote
+                </button>
+                <p class="text-gray-900 text-sm px-6 font-bold">
+                    WATCH HOW WE CAN HELP
+                </p>
+            </div>
+            <div class="relative">
+                <!-- Image en premier plan -->
+                <img src="./images/Fichier1.png" alt="Business Woman" class="w-3/4 h-auto mx-auto rounded-lg z-10 relative">
+              
+                <!-- Divs en arrière-plan -->
+                <div class="absolute top-12 right-24 w-24 h-24 bg-no-repeat z-0" style="background-image: url('./images/Fichier3.png'); background-size: contain;"></div>
+                <div class="absolute top-36 left-20 w-40 h-40 bg-no-repeat z-0" style="background-image: url('./images/Fichier4.png'); background-size: contain;"></div>
+                <div class="absolute bottom-0 right-0 w-40 h-40 bg-no-repeat z-20" style="background-image: url('./images/fichier5.png'); background-size: contain;"></div>
+              </div>
+              
+            
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 text-white py-6 px-6 z-30" style="background-image: url('./images/Fichier10.png'); background-size: cover; background-position: center;">
+            <div class="container mx-auto flex items-center justify-center md:justify-center">
+                <svg class="w-7 h-7 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm-1-11.5V13l4-2.5-4-2.5z" clip-rule="evenodd"></path>
+                </svg>                    
+                <p class="text-sm">
+                    Interested how our software works for you? <a href="#" class="underline hover:text-gray-200">Watch our 1 minute video</a>
+                </p>
+            </div>
+        </div>      
+    </section>
+
+    <section class="bg-white py-20 px-6 mx-auto max-w-screen-lg text-center">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+            <div class="text-left">
+                <h2 class="text-2xl font-bold text-gray-900 mb-4 leading-tight">
+                    Experienced experts are <br> giving advices.
+                </h2>
+                <p class="text-gray-600 mb-6 leading-relaxed">
+                    With lots of unique blocks, you can <br> easily build a page without coding. <br> Build your next landing page.
+                </p>
+                <button class="bg-indigo-700 text-white px-6 py-2 rounded-lg hover:bg-indigo-700 transition duration-300 ease-in-out">
+                    Learn how we work
+                </button>
+            </div>
+            <div class="flex justify-center">
+                <img src="./images/Fichier11.png" alt="Business Experts" class="rounded-lg px-5">
+            </div>
+            <div class="text-left space-y-12 flex flex-col justify-center">
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900">1M+</h3>
+                    <p class="text-gray-600">Customers visit Albino every month <br> to get their service done.</p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900">92%</h3>
+                    <p class="text-gray-600">Satisfaction rate comes from our <br> awesome customers.</p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900">4.9/5.0</h3>
+                    <p class="text-gray-600">Average customer ratings we have <br> got all over internet.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section class="bg-gray-50 py-20 px-6 md:px-24">
+        <div class="container  mx-auto max-w-screen-lg text-center">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">
+                Services we offer for you
+            </h2>
+            <p class="text-gray-600 mb-12">
+                With lots of unique blocks, you can easily build a page without <br> coding. Build your next landing page.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3">
+                <div class="rounded-lg p-6">
+                    <h3 class="text-lg font-bold text-gray-900 mb-2 text-left pb-3">Digital Marketing</h3>
+                    <img src="./images/Fichier14.png" alt="Digital Marketing" class="w-full h-38 object-cover rounded-t-lg mb-4">
+                    <p class="text-gray-600 mb-4 text-left">
+                        With lots of unique blocks, you can easily build a page without coding. Build your next landing page.
+                    </p>
+                    <a href="#" class="text-indigo-700 font-semibold hover:underline flex items-center">
+                        Learn more 
+                        <svg class="w-6 h-6 ml-1 transform rotate-90" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M12.293 9.293a1 1 0 011.414 0l3 3a1 1 0 01-1.414 1.414L13 11.414V17a1 1 0 11-2 0v-5.586l-2.293 2.293a1 1 0 01-1.414-1.414l3-3z" clip-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                </div>
+    
+                <div class=" rounded-lg  p-6">
+                    <h3 class="text-lg font-bold text-gray-900 mb-2 text-left pb-3">Business Growth</h3>
+                    <img src="./images/Fichier15.png" alt="Business Growth" class="w-full h-38 object-cover rounded-t-lg mb-4">
+                    <p class="text-gray-600 mb-4 text-left">
+                        With lots of unique blocks, you can easily build a page without coding. Build your next landing page.
+                    </p>
+                    <a href="#" class="text-indigo-700 font-semibold hover:underline flex items-center">
+                        Learn more 
+                        <svg class="w-6 h-6 ml-1 transform rotate-90" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M12.293 9.293a1 1 0 011.414 0l3 3a1 1 0 01-1.414 1.414L13 11.414V17a1 1 0 11-2 0v-5.586l-2.293 2.293a1 1 0 01-1.414-1.414l3-3z" clip-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                </div>
+    
+                <div class=" rounded-lg  p-6">
+                    <h3 class="text-lg font-bold text-gray-900 mb-2 text-left pb-3">Content Marketing</h3>
+                    <img src="./images/Fichier16.png" alt="Content Marketing" class="w-full h-38 object-cover rounded-t-lg mb-4">
+                    <p class="text-gray-600 mb-4 text-left">
+                        With lots of unique blocks, you can easily build a page without coding. Build your next landing page.
+                    </p>
+                    <a href="#" class="text-indigo-700 font-semibold hover:underline flex items-center">
+                        Learn more 
+                        <svg class="w-6 h-6 ml-1 transform rotate-90" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M12.293 9.293a1 1 0 011.414 0l3 3a1 1 0 01-1.414 1.414L13 11.414V17a1 1 0 11-2 0v-5.586l-2.293 2.293a1 1 0 01-1.414-1.414l3-3z" clip-rule="evenodd"></path>
+                        </svg>                            
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-white pb-48 pt-12 px-6 md:px-24 relative mb-24">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+            <div class="relative">
+                <div class="absolute inset-0 flex justify-center items-center">
+                    <div class="w-80 h-80 bg-green-300 rounded-full"></div>
+                </div>
+                <img src="./images/Fichier18.png" alt="Person" class="relative z-10 w-1/2 h-auto rounded-lg mx-auto transform translate-x-20 translate-y-15">
+            </div>                
+            <div class="text-left self-start">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4 leading-tight">
+                    Reasons you should choose <br>us to grow today.
+                </h2>
+                <p class="text-gray-600 mb-6 leading-relaxed">
+                    We share common trends and strategies for <br> improving your rental income and making sure you <br>stay in high demand.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="flex items-center">
+                        <svg class="w-6 h-6 text-indigo-600 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L9 11.586 6.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l7-7a1 1 0 000-1.414z" clip-rule="evenodd"></path>
+                        </svg>
+                        <p class="text-gray-900 font-bold">Fully Responsive</p>
+                    </div>
+                    <div class="flex items-center">
+                        <svg class="w-6 h-6 text-indigo-600 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L9 11.586 6.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l7-7a1 1 0 000-1.414z" clip-rule="evenodd"></path>
+                        </svg>
+                        <p class="text-gray-900 font-bold">Beautiful Layouts</p>
+                    </div>
+                    <div class="flex items-center">
+                        <svg class="w-6 h-6 text-indigo-600 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L9 11.586 6.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l7-7a1 1 0 000-1.414z" clip-rule="evenodd"></path>
+                        </svg>
+                        <p class="text-gray-900 font-bold">Easy to Edit</p>
+                    </div>
+                    <div class="flex items-center">
+                        <svg class="w-6 h-6 text-indigo-600 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 00-1.414 0L9 11.586 6.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l7-7a1 1 0 000-1.414z" clip-rule="evenodd"></path>
+                        </svg>
+                        <p class="text-gray-900 font-bold">Google Font Included</p>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute -bottom-1 left-0 right-0 z-30 text-white px-6 pb-24" style="background-image: url('./images/Fichier38.png'); background-size: cover; background-position: center;">
+                <div class="absolute inset-0 bg-gray-700 opacity-50 z-10"></div>
+                <div class="relative z-20 container mx-auto text-center">
+                    <div class="flex justify-center pt-24">
+                        <img src="./images/Fichier23.png" class="h-20 w-20 filter grayscale" alt="">
+                    </div>
+                    <h2 class="text-3xl font-bold text-white mb-4">How do we help you to grow?</h2>
+                    <p class="text-white text-lg">
+                        With lots of unique blocks, you can easily build a page without <br>coding. Build your next landing page.
+                    </p>
+                </div>                
+            </div>
+        </div>
+        
+    </section>
+    
+   <!-- Section des témoignages -->
+   <section class="bg-white pt-6 pb-24">
+    <div class="container mx-auto max-w-screen-lg text-center">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">What people say about us</h2>
+        <p class="text-gray-600 mb-12">With lots of unique blocks, you can easily build a page without <br> coding. Build your next landing page.</p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-lg flex flex-col justify-between border border-zinc-200" style="min-height: 300px;">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <img src="./images/Fichier30.png" alt="User 1" class="w-12 h-12 rounded-full mr-4">
+                    </div>
+                    <p class="text-gray-600 text-left font-medium">"You made it so simple. My <br> new site is so much faster <br> and easier to work with than <br> my old site."</p>
+                </div>
+                <div class="mt-4 flex items-center">
+                    <p class="font-bold text-gray-900 pr-2">Isabella Chávez</p>
+                    <p class="text-gray-600">Graphic Designer</p>
+                </div>
+            </div>
+
+            <div class="bg-white p-8 rounded-lg flex flex-col justify-between border border-zinc-200" style="min-height: 300px;">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <img src="./images/Fichier27.png" alt="User 2" class="w-12 h-12 rounded-full mr-4">
+                    </div>
+                    <p class="text-gray-600 text-left font-medium">"Simply the best. Better than <br> all the rest. I'd recommend this <br>product to beginners and <br>advanced users."</p>
+                </div>
+                <div class="mt-4 flex items-center">
+                    <p class="font-bold text-gray-900 pr-5">Curtis Rhodes</p>
+                    <p class="text-gray-600">Digital Marketer</p>
+                </div>
+            </div>
+
+            <div class="bg-white p-8 rounded-lg flex flex-col justify-between border border-zinc-200" style="min-height: 300px;">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <img src="./images/Fichier25.png" alt="User 3" class="w-12 h-12 rounded-full mr-4">
+                    </div>
+                    <p class="text-gray-600 text-left font-medium">"Must have book for all, who <br> want to be Product Designer or <br>Interaction Designer."</p>
+                </div>
+                <div class="mt-4 flex items-center">
+                    <p class="font-bold text-gray-900 pr-5">Lucas Mann</p>
+                    <p class="text-gray-600">Co Founder</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section verte -->
+<section class="bg-cover bg-center py-10" style="background-image: url('./images/Fichier31.png');">
+    <div class="container mx-auto flex items-center justify-center text-center md:text-left">
+        <h2 class="text-2xl font-bold text-white px-8">Ready to get started?</h2>
+        <button class="bg-white text-dark-900 font-bold py-3 px-8 rounded-lg shadow-lg">Get A Free Quote</button>
+    </div>
+</section>
+
+
+<footer class="bg-gray-900 text-white py-16 px-10 md:px-10">
+    <div class="container mx-auto max-w-screen-lg grid grid-cols-1 md:grid-cols-5 gap-12">
+        <div class="">
+            <h2 class="text-xl font-bold mb-4">Brainwave.io</h2>
+            <p class="text-gray-400 mb-6 text-sm">With lots of unique blocks, you can easily build a page without coding. Build your next landing page.</p>
+            <div class="flex space-x-4">
+                <a href="#"><img src="./images/Fichier34.png" alt="Twitter" class="w-5 h-5"></a>
+                <a href="#"><img src="./images/Fichier35.png" alt="Facebook" class="w-5 h-5"></a>
+                <a href="#"><img src="./images/Fichier36.png" alt="Instagram" class="w-5 h-5"></a>
+                <a href="#"><img src="./images/Fichier37.png" alt="LinkedIn" class="w-5 h-5"></a>
+            </div>
+        </div>
+
+        <div>
+            <h3 class="text-sm text-gray-400 font-normal mb-4">Company</h3>
+            <ul class="space-y-2 text-sm">
+                <li><a href="#" class="text-white-400 hover:text-white">About us</a></li>
+                <li><a href="#" class="text-white-400 hover:text-white">Contact us</a></li>
+                <li><a href="#" class="text-white-400 hover:text-white">Careers</a></li>
+                <li><a href="#" class="text-white-400 hover:text-white">Press</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h3 class="text-sm text-gray-400 font-normal mb-4">Product</h3>
+            <ul class="space-y-2 text-sm">
+                <li><a href="#" class="text-white-400 hover:text-white">Features</a></li>
+                <li><a href="#" class="text-white-400 hover:text-white">Pricing</a></li>
+                <li><a href="#" class="text-white-400 hover:text-white">News</a></li>
+                <li><a href="#" class="text-white-400 hover:text-white">Help desk</a></li>
+                <li><a href="#" class="text-white-400 hover:text-white">Support</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h3 class="text-sm text-gray-400 font-normal mb-4">Services</h3>
+            <ul class="space-y-2 text-sm">
+                <li><a href="#" class="text-white-400 hover:text-white">Digital Marketing</a></li>
+                <li><a href="#" class="text-white-400 hover:text-white">Content Writing</a></li>
+                <li><a href="#" class="text-white-400 hover:text-white">SEO for Business</a></li>
+                <li><a href="#" class="text-white-400 hover:text-white">UI Design</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h3 class="text-sm text-gray-400 font-normal mb-4">Legal</h3>
+            <ul class="space-y-2 text-sm">
+                <li><a href="#" class="text-white-400 hover:text-white">Privacy Policy</a></li>
+                <li><a href="#" class="text-white-400 hover:text-white">Terms & Conditions</a></li>
+                <li><a href="#" class="text-white-400 hover:text-white">Return Policy</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>
